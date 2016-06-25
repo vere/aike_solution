@@ -175,12 +175,6 @@ a.scrolldown {
 	Main
 ******************************************************************/
 
-.content.sidebar {
-	width: 800px;
-	float: none;
-	margin: 0 auto;
-	margin-top: 40px;
-}
 /*Menu*/
 .menubar {
 	position: fixed;
@@ -354,176 +348,50 @@ div.more_card a.card_button{
 /******************************************************************
 	Blog
 ******************************************************************/
-article.post {
-	width: 800px;
-	margin: 20px 0px 0px 0px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #e7e7e7;
-}
-article.post.full {
-	display: none;
-}
+
+
 #postsfull {
 	display: none;
 }
-div.content article:last-child {
-	border-bottom: none;
-}
-div.postimage {
-	float: none;
-	width: 800px;
-	height: 240px;
-	overflow: hidden;
-	position: absolute;
-}
-div.postimage img {
-	width: 800px;
-	position: relative;
-}
-div.posthover {
-	opacity: 0;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 800px;
-	height: 240px;
-	background-color: rgba(96, 147, 231, 0.6);
-	-webkit-transition: opacity 0.4s;
-	-moz-transition: opacity 0.4s;
-	-ms-transition: opacity 0.4s;
-	-o-transition: opacity 0.4s;
-	transition: opacity 0.4s;
-}
-article.post .hover:hover div.posthover {
-	opacity: 1;
+.blog .cards {
+
+  margin: 5em 10em 5em 10em;
+  padding: 0;
 }
 
+.blog .cards_item {
 
-div.posthover a {
-	display: block;
-	font-size: 24px;
-	text-align: center;
-	color: #FFF;
-	line-height: 240px;
+  margin-top: 2em;
+  padding: 0 1em 2em;
 }
-img.readimg{
-	width: 100%;
-	margin: 0 auto;
-	margin-top: 30px;
-}
-div.nothing{
-	width: 800px;
-	height: 240px;
-}
-article.post h2 {
-	padding-top: 30px; 
-	font-size: 28px;
-	color: #363636;
-}
-article.post h3 {
-	clear: both;
-	color: #363636;
-	font-size: 23px;
-	font-weight: 400;
-	padding-top: 30px; 
-}
-article.post p {
-	clear: both;
-	font-size: 16px;
-	color: #363636;
-	padding-top: 20px; 
-	line-height: 1.7;
-}
-article.post ul{
-
-	font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
-	list-style: circle;
-	list-style-position: outside;
-	line-height: 1.7;
-	padding: 20px 10px 0 30px;
-	font-style: normal;
-}
-article.post ul li ul{
-	list-style: none;
-	padding: 10px 0 0 0;
-}
-article.post ul.list2{
-	list-style: decimal;
-	list-style-position: outside;
-	font-style: normal;
-	font-weight: 400;
-}
-article.post ul.list2 li{
-	font-style: normal;
-	font-weight: 600;
-}
-article.post ul.list2 ul{
-	list-style: none;
-	padding: 10px 10px 10px 0px; 
-}
-article.post ul.list3{
-	list-style: decimal;
+.no-flexbox .blog .cards_item {
+  float: none;
 }
 
-article.post ul.list3 ul{
-	list-style: circle;
+@media screen and (min-width: 42em) and (max-width: 60em) {
+  .blog .cards_item {
+    width: 100%;
+  }
+  .no-flexbox .cards_item:nth-child(2n+1) {
+    clear: both;
+  }
+  .blog .cards{
+  	margin: 5em;
+  }
+}
+@media screen and (min-width: 60em) {
+ .blog .cards_item {
+    width: 100%;
+  }
+  .no-flexbox .cards_item:nth-child(3n+1) {
+    clear: both;
+  }
 }
 
-article.post ul.list2 li ul li{
-	font-style: normal;
-	font-weight: 400;
+.card_content p {
+	margin-top: 1.5em;
 }
 
-
-
-/*footer back*/
-
-
-div.postimagebottom {
-	margin-top: 10px;
-	float: none;
-	width: 160px;
-	height: 50px;
-	position: absolute;
-}
-
-div.posthoverbottom {
-	margin-top: 10px;
-	opacity: 0.5;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 160px;
-	height: 50px;
-	background-color: rgba(102, 102, 102, 0.5);
-	-webkit-transition: opacity 0.4s;
-	-moz-transition: opacity 0.4s;
-	-ms-transition: opacity 0.4s;
-	-o-transition: opacity 0.4s;
-	transition: opacity 0.4s;
-}
-article.post .hoverbottom:hover div.posthoverbottom {
-	opacity: 1;
-}
-
-
-div.posthoverbottom a {
-	display: block;
-	font-size: 24px;
-	text-align: center;
-	color: #FFF;
-	line-height: 50px;
-}
-
-div.nothing2{
-	width: 800px;
-	height: 30px;
-}
-
-div.nothing3{
-	width: 800px;
-	height: 100px;
-}
 
 /*footer*/
 .footer {
