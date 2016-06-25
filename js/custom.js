@@ -17,11 +17,6 @@ $(document).ready(function() {
 		}
 	});
 
-	// Scroll Down Link
-	$('.scrolldown').click(function() {
-		var targetOffset = $('div.blockquote').offset().top-80;
-		$('html,body').animate({scrollTop: targetOffset}, 1000);
-	});
 
 	// Menu Scroll Hide
 	var nav = $('.menubar');
@@ -77,12 +72,12 @@ $(document).ready(function() {
 	$('a.openpost').click(function(){
 		var id = $(this).attr('data-id');
 		$('#snippets').hide();
-		$('article.full[data-id="'+id+'"]').show();
+		$('li.full[data-id="'+id+'"]').show();
 		$('#postsfull').fadeIn();
 	});
 	$('a.backtoblog').click(function(){
 		$('#postsfull').hide();
-		$('article.full').hide();
+		$('li.full').hide();
 		$('#snippets').fadeIn();
 	});
 

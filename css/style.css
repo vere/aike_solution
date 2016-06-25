@@ -355,34 +355,34 @@ div.more_card a.card_button{
 #postsfull {
 	display: none;
 }
-.blog .cards {
+.detail .cards {
 
   margin: 5em 10em 5em 10em;
   padding: 0;
 }
 
-.blog .cards_item {
+.detail .cards_item {
 
   margin-top: 2em;
   padding: 0 1em 2em;
 }
-.no-flexbox .blog .cards_item {
+.no-flexbox .detail .cards_item {
   float: none;
 }
 
 @media screen and (min-width: 42em) and (max-width: 60em) {
-  .blog .cards_item {
+  .detail .cards_item {
     width: 100%;
   }
   .no-flexbox .cards_item:nth-child(2n+1) {
     clear: both;
   }
-  .blog .cards{
+  .detail .cards{
   	margin: 5em;
   }
 }
 @media screen and (min-width: 60em) {
- .blog .cards_item {
+ .detail .cards_item {
     width: 100%;
   }
   .no-flexbox .cards_item:nth-child(3n+1) {
