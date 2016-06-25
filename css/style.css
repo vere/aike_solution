@@ -360,8 +360,6 @@ div.more_card a.card_button{
 @media screen and  (max-width: 42em) {
   .detail .cards_item {
     width: 100%;
-  }
-  .detail.cards_item{
   	padding: 0em 0em 2em;
   }
   .detail .cards{
