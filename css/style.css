@@ -363,7 +363,7 @@ div.more_card a.card_button{
   }
   
   .detail .cards{
-  	margin: 1em;
+  	margin: 0em;
   }
 }
 @media screen and (min-width: 42em) and (max-width: 60em) {
