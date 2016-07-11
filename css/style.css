@@ -36,7 +36,7 @@ html, body {
 	height: 100%;
 	background-color: #f2f2f2;
   	color: #444;
-	letter-spacing: 0.025em;
+	letter-spacing: 0.035em;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 /*Text Selection Styles*/
@@ -70,52 +70,37 @@ b {
 }
 p {
 	font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
-	color: #848484;
-	font-size: 14kpx;
+	font-size: 16px;
+	color: #363636;
 }
 h1 {
 	font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
 	line-height: 1.6em;
-	color: #454544;
 	text-decoration: none;
 	font-size: 40px;
+	color: #363636;
 }
 h2 {
 	font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
 	line-height: 1.6em;
-	color: #454544;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 28px;
+	color: #363636;
 }
 h3 {
 	font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
 	line-height: 1.6em;
-	color: #454544;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 23px;
+	color: #363636;
 }
 h4 {
 	font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
 	line-height: 1.6em;
-	color: #454544;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 20px;
+	color: #363636;
 }
-h5 {
-	font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
-	line-height: 1.6em;
-	color: #454544;
-	text-decoration: none;
-	font-size: 14px;
-}
-h6 {
-	font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
-	line-height: 1.6em;
-	color: #454544;
-	text-decoration: none;
-	font-size: 12px;
-}
-
 
 /*Hero Images*/
 .hero {
@@ -175,12 +160,6 @@ a.scrolldown {
 	Main
 ******************************************************************/
 
-.content.sidebar {
-	width: 800px;
-	float: none;
-	margin: 0 auto;
-	margin-top: 40px;
-}
 /*Menu*/
 .menubar {
 	position: fixed;
@@ -319,14 +298,17 @@ ul.mainmenu li.active a {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 0;
-  padding: 1.5em;
+  padding: 0em 1.5em 1.5em;
 }
 .card_content p {
-	margin-top: 1.5em;
+	margin-top: 1em;
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+          color: #363636;
+	line-height: 1.7;
+
 }
 a.card_button{
 	display: inline-block;
@@ -354,87 +336,69 @@ div.more_card a.card_button{
 /******************************************************************
 	Blog
 ******************************************************************/
-article.post {
-	width: 800px;
-	margin: 20px 0px 0px 0px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #e7e7e7;
-}
-article.post.full {
+.post.full {
 	display: none;
 }
+
 #postsfull {
 	display: none;
 }
-div.content article:last-child {
-	border-bottom: none;
-}
-div.postimage {
-	float: none;
-	width: 800px;
-	height: 240px;
-	overflow: hidden;
-	position: absolute;
-}
-div.postimage img {
-	width: 800px;
-	position: relative;
-}
-div.posthover {
-	opacity: 0;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 800px;
-	height: 240px;
-	background-color: rgba(96, 147, 231, 0.6);
-	-webkit-transition: opacity 0.4s;
-	-moz-transition: opacity 0.4s;
-	-ms-transition: opacity 0.4s;
-	-o-transition: opacity 0.4s;
-	transition: opacity 0.4s;
-}
-article.post .hover:hover div.posthover {
-	opacity: 1;
+.detail .cards {
+
+  margin: 5em 10em 5em 10em;
+  padding: 0;
 }
 
+.detail .cards_item {
 
-div.posthover a {
-	display: block;
-	font-size: 24px;
-	text-align: center;
-	color: #FFF;
-	line-height: 240px;
+  margin-top: 2em;
+  padding: 0 1em 2em;
 }
-img.readimg{
-	width: 100%;
-	margin: 0 auto;
-	margin-top: 30px;
+.no-flexbox .detail .cards_item {
+  float: none;
 }
-div.nothing{
-	width: 800px;
-	height: 240px;
+@media screen and  (max-width: 42em) {
+  .detail .cards_item {
+    width: 100%;
+  	padding: 0em 0em 2em;
+  }
+  .detail .cards{
+  	margin: 0em;
+  }
 }
-article.post h2 {
+@media screen and (min-width: 42em) and (max-width: 60em) {
+  .detail .cards_item {
+    width: 100%;
+  }
+  .detail .cards{
+  	margin: 1em;
+  }
+}
+@media screen and (min-width: 60em) {
+ .detail .cards_item {
+    width: 60em;
+    margin: 0 auto;
+  }
+}
+
+.detail .card_content{
+	padding: 1.5em 3em 1.5em;
+}
+.card_content h2 {
 	padding-top: 30px; 
-	font-size: 28px;
-	color: #363636;
+	padding-bottom: 10px;	
 }
-article.post h3 {
+.card_content h3 {
 	clear: both;
-	color: #363636;
-	font-size: 23px;
 	font-weight: 400;
-	padding-top: 30px; 
+	margin-top: 1.2em; 
 }
-article.post p {
-	clear: both;
-	font-size: 16px;
-	color: #363636;
-	padding-top: 20px; 
-	line-height: 1.7;
+.card_content img{
+	width: 100%;
+	height: auto;
+	margin-top: 1em;
 }
-article.post ul{
+.card_content ul{
 
 	font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif";
 	list-style: circle;
@@ -443,86 +407,40 @@ article.post ul{
 	padding: 20px 10px 0 30px;
 	font-style: normal;
 }
-article.post ul li ul{
+.card_content ul li ul{
 	list-style: none;
 	padding: 10px 0 0 0;
 }
-article.post ul.list2{
+.card_content ul.list2{
 	list-style: decimal;
 	list-style-position: outside;
 	font-style: normal;
 	font-weight: 400;
 }
-article.post ul.list2 li{
+.card_content ul.list2 li{
 	font-style: normal;
 	font-weight: 600;
 }
-article.post ul.list2 ul{
+.card_content ul.list2 ul{
 	list-style: none;
 	padding: 10px 10px 10px 0px; 
 }
-article.post ul.list3{
+.card_content ul.list3{
 	list-style: decimal;
 }
 
-article.post ul.list3 ul{
+.card_content ul.list3 ul{
 	list-style: circle;
 }
 
-article.post ul.list2 li ul li{
+.card_content ul.list2 li ul li{
 	font-style: normal;
 	font-weight: 400;
 }
 
-
-
-/*footer back*/
-
-
-div.postimagebottom {
-	margin-top: 10px;
-	float: none;
-	width: 160px;
-	height: 50px;
-	position: absolute;
-}
-
-div.posthoverbottom {
-	margin-top: 10px;
-	opacity: 0.5;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 160px;
-	height: 50px;
-	background-color: rgba(102, 102, 102, 0.5);
-	-webkit-transition: opacity 0.4s;
-	-moz-transition: opacity 0.4s;
-	-ms-transition: opacity 0.4s;
-	-o-transition: opacity 0.4s;
-	transition: opacity 0.4s;
-}
-article.post .hoverbottom:hover div.posthoverbottom {
-	opacity: 1;
-}
-
-
-div.posthoverbottom a {
-	display: block;
-	font-size: 24px;
-	text-align: center;
-	color: #FFF;
-	line-height: 50px;
-}
-
-div.nothing2{
-	width: 800px;
-	height: 30px;
-}
-
-div.nothing3{
-	width: 800px;
-	height: 100px;
+a.backtoblog{
+	margin-bottom: 2em;
+	
 }
 
 /*footer*/
